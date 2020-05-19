@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
+:root {
+    --primary: #C7B299;
+    --secondary: #FFC120;
+    --tertiary: #50473D;
+    --quaternary: #BFBFBF;
+    --fourth: #E0E0E0;
+    --fifth: #F1ECE5;
+    --sixth: #4A4642;
+    --seventh: #EADCCB;
+    --eighth: #C4C4C4;
+    /* var(--primary); */
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+.form-select{
+    background: #fff url("../images/dropdown.arrow.black.svg") no-repeat right 0.75rem center/15px;
+}
+
+.btn, .btn:focus{
+    cursor: pointer;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.hide-date-field{
+    border: 0;
+    height: 0 !important;
+}
+.hide-date-field > .btn,
+.hide-date-field > .form-control{
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0 !important;
+    overflow: hidden;
+    border: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.section {
+    padding-top: 50px;
+}
+
+.title-1 {
+    color: var(--tertiary);
+    font-size: 44px;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.2;
+    margin-bottom: 60px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        border-top: 2px solid var(--quaternary);
+        top: 50%;
+        right: 100%;
+        margin-right: 30px;
+    }
+}
+
+
+
+/*** RESPONSIVE ***/
+/******************/
+
+@media (min-width: 1200px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1250px;
+    }
+}
+@media (min-width: 1500px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1550px;
+    }
+}
+@media (min-width: 992px){
+    
+}
+@media (min-width: 768px){
+    
+}
+@media (min-width: 576px){
+    
+}
